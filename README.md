@@ -4,7 +4,7 @@ Online Backgammon Game - Chengdu Technological University
 ### 此模块为在线五子棋社区的一个子模块，[在线五子棋V04](https://github.com/bzsome/gobang04)
 
 ### 当前版本为在线版，需要服务器支持，请先部署Oauth授权服务和Netty即时通讯服务。
-### 如需在线版，请查看GobangClient_V01 https://github.com/bzsome/GobangClient
+### 如需离线版，请查看GobangClient_V01 https://github.com/bzsome/GobangClient
 
 ### 
 
