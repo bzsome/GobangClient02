@@ -1,4 +1,4 @@
-# GobangClient02 在线五子棋社区，客户端模块
+# GobangClient02 在线五子棋客户端
 
 Online Backgammon Game - Chengdu Technological University
 ### 此模块为在线五子棋社区的一个子模块，[在线五子棋V04](https://github.com/bzsome/gobang04)
