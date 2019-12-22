@@ -1,6 +1,5 @@
 package com.chao;
 
-import com.chao.chatclient.ChatManager;
 import com.chao.oauth.UserManager;
 import com.chao.views.pannel.MainFrame;
 import com.chao.views.pannel.UserPanel;
@@ -31,7 +30,6 @@ public class MainActivity {
                 PlayerMe.setUsername(username);
                 PlayerMe.getInstance().setGrade(1201);
 
-                ChatManager.startChat();
 
                 UserPanel.setUserInfo(PlayerMe.getInstance(), UserPanel.LEFT);
                 JOptionPane.showMessageDialog(MainFrame.getInstance(), username + "欢迎回来！当前分数：" + 1201 + "\n在线一分钟可获得1积分！", "自动登录成功",

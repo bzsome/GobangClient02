@@ -1,1 +1,1 @@
-jlink -p target/user-client-1.0-SNAPSHOT-dist-dir --add-modules module --output D:\java --launcher start=module/com.bzchao.MainActivity
+jlink -p target/user-client-1.0-SNAPSHOT-dist-dir --add-modules module --output D:\java221 --launcher start=module/com.chao.MainActivity

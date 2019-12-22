@@ -7,8 +7,5 @@ module module {
     // requires service;
     requires java.logging;
     requires java.desktop;
-    requires slf4j.api;
-    requires io.netty.all;
-    requires gson;
-    requires okhttp3;
+    requires com.google.gson;
 }

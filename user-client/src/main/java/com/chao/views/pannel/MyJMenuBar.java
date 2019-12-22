@@ -7,7 +7,6 @@ import java.util.ArrayList;
 
 import javax.swing.*;
 
-import com.chao.chatclient.ChatManager;
 import com.chao.control.Countown;
 import com.chao.oauth.UserManager;
 import com.chao.oauth.UserAuthService;
@@ -197,7 +196,6 @@ public class MyJMenuBar extends JMenuBar {
                         PlayerMe.setUsername(username);
                         PlayerMe.getInstance().setGrade(1201);
 
-                        ChatManager.startChat();
                         UserPanel.setUserInfo(PlayerMe.getInstance(), UserPanel.LEFT);
                         JOptionPane.showMessageDialog(MainFrame.getInstance(), username
                                         + "欢迎回来！当前分数：" + 1201 + "\n在线一分钟可获得1积分！", "登录成功",

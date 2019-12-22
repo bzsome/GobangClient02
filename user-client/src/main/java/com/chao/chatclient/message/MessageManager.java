@@ -2,12 +2,12 @@ package com.chao.chatclient.message;
 
 import com.chao.domain.MyMessage;
 import com.chao.views.pannel.Chatroom;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+
+import java.util.logging.Logger;
 
 
 public class MessageManager {
-    private final static Logger logger = LoggerFactory.getLogger(MessageManager.class);
+    private final static Logger logger = Logger.getLogger(MessageManager.class.getName());
 
     /**
      * 显示Message信息

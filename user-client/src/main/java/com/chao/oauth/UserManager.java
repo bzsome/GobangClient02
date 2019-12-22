@@ -3,15 +3,15 @@ package com.chao.oauth;
 import com.chao.domain.UserBean;
 import com.chao.oauth.impl.UserAuthImpl;
 import com.chao.views.player.PlayerMe;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+
+import java.util.logging.Logger;
 
 import java.io.*;
 import java.util.Properties;
 
 public class UserManager {
 
-    private final static Logger logger = LoggerFactory.getLogger(UserManager.class);
+    private final static Logger logger = Logger.getLogger(UserManager.class.getName());
     //储存当前登录用户
     private static UserBean userBean;
 
@@ -26,13 +26,13 @@ public class UserManager {
     public static void load(final BackAction backAction) {
         token = getTokenByFile();
         if (token == null || "null".equals(token)) {
-            logger.info("用户口令为空，终止校验：{}", token);
+            logger.info("用户口令为空，终止校验：{}");
             return;
         }
         new UserAuthImpl().getUserByToken(token, new UserAuthService.LoginBack() {
             @Override
             public void success() {
-                logger.info("通过token口令获得用户信息：{}", UserManager.getUserBean().getUsername());
+                logger.info("通过token口令获得用户信息：{}");
                 backAction.success();
             }
 
@@ -108,8 +108,9 @@ public class UserManager {
         return null;
     }
 
-   public interface BackAction {
+    public interface BackAction {
         void success();
+
         void error();
     }
 

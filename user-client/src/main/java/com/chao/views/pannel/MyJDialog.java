@@ -1,6 +1,5 @@
 package com.chao.views.pannel;
 
-import com.chao.chatclient.ChatManager;
 import com.chao.domain.MyMessage;
 import com.chao.views.game.Algorithm;
 
@@ -31,8 +30,7 @@ public class MyJDialog {
         jButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent arg0) {
-                ChatManager.sendMessage(new MyMessage("", userField.getText().trim(), msgArea.getText()));
-                jd.setVisible(false);
+                    jd.setVisible(false);
             }
         });
         jd.setModal(true);//确保弹出的窗口在其他窗口前面
